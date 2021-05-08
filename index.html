@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href = "node_modules/bulma/css/bulma.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom_style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/sgt6mtz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+    <script src="view.js" type="module"></script> 
+
+    <title>Blackjack</title>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+                   
+            <i class="fas fa-spa fa-5x"></i>
+          <a class="navbar-item" href="https://bulma.io">
+            <h1 class="title_blackjack">Blackjack 426</h1>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a target="_self" href="/nba_table/index.html"class="navbar-item">
+              NBA Standings
+            </a>
+      
+            <a target="_self" href="/weather/index.html"class="navbar-item">
+              Weather
+            </a>    
+            
+            <a target="_self" href="/memes/index.html"class="navbar-item">
+                Memes
+              </a>  
+            
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <p id="emailDisplay" class="usernameDisp subtitle is-3"></p>
+              </div
+              ></div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a target="_self" href="/Firebase_Login/signup.html"class="button is-dark">
+                  <strong>Sign up</strong>
+                </a>
+                <a target="_self" href="/Firebase_Login/login.html"class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<section id = "username_section" class="section">
+    <div class="column">
+        <h1 class="title">Choose your username</h1>
+        <form>
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control">
+                    <input class="input" id="username_field" type="text" placeholder="Cookie Monster 2.0"
+                        name="username">
+                </div>
+            </div>
+            <div class="field">
+                <div  id="submit_username"class="buttons">
+                    <button class="button is-dark">Start</button>
+                </div>
+            </div>
+        </form>
+</section>
+
+<section id = "blackjackContainer" class="section">
+
+        <div class= "buttons are-medium is-centered">
+            <button id="hit_button" class="button is-dark">   Hit   </button>
+            <button id="stand_button" class="button is-light">Stand</button>
+            <button id="reset_button" class="button is-danger">Reset Hand</button>
+            <button id="resetDeck_button"class="button is-large is-fullwidth is-danger is-outlined">Reshuffle Deck</button>
+
+
+        </div>
+
+        <div id='blackjackDisplay' class= "column">
+            <div id="userCards" class="is-flex is-flex-direction-row container is-justify-content-space-around	is-align-items-center"></div>
+            <div id="dealerCards" class="is-flex is-flex-direction-row container is-justify-content-space-around	is-align-items-center"></div>
+
+        </div>
+
+
+</section>
+
+
+
+
+
+
+</body>
+</html>
