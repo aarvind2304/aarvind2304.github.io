@@ -234,7 +234,7 @@ function checkState() {
         hitbtn.css("display", "none")
         let standbtn = $('#stand_button');
         standbtn.css("display", "none")
-        //  alert("You lose this Hand");
+          alert("You lose this Hand");
     }
     else if (game.gamestate.playerState == 1) {
         let resetbtn = $('#reset_button');
@@ -243,7 +243,7 @@ function checkState() {
         hitbtn.css("display", "none")
         let standbtn = $('#stand_button');
         standbtn.css("display", "none")
-        //  alert("You win this Hand!!!");
+          alert("You win this Hand!!!");
     }
     else if (game.gamestate.playerState == 2) {
         let resetbtn = $('#reset_button');
@@ -252,7 +252,7 @@ function checkState() {
         hitbtn.css("display", "none")
         let standbtn = $('#stand_button');
         standbtn.css("display", "none")
-        // alert("Tie, this is a push");
+        alert("Tie, this is a push");
 
     }
 }
